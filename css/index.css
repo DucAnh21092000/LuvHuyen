@@ -1,0 +1,136 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#canvas {
+    position: absolute;
+    z-index: 6
+}
+
+.year {
+    font-size: 4rem;
+    color: red;
+    opacity: 0.7;
+    text-shadow: white 2px 3px;
+    letter-spacing: 5px;
+}
+
+.content {
+    font-size: 2rem;
+    opacity: 0.7;
+}
+
+.main {
+    background-image: url('../image/background.jpg');
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 20s linear;
+}
+
+.year {
+    background-color: white;
+}
+
+#info {
+    background: #333;
+    opacity: 0.8;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 280px;
+    color: #fff;
+    border-radius: 5px;
+    z-index: 10
+}
+
+#info p {
+    padding: 0 10px;
+}
+
+#info a {
+    color: #f2ea0a;
+}
+
+/* basic styles for black background and crosshair cursor */
+body {
+    background: url('../image/background.jpg');
+    margin: 0;
+}
+
+canvas {
+    cursor: crosshair;
+    display: block;
+}
+
+.mess {
+    font-size: 1.4rem;
+}
+
+.header__content,.start__content,.abc__content, .thanks {
+    width: 300px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgb(17, 25, 53), rgb(44, 65, 96));
+    padding: 10px 20px;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.waitted {
+    position: absolute;
+    top: 180px;
+    left: 90px;
+    z-index: 9;
+    font-size: 50px;
+    font-weight: 600;
+}
+.huyen{
+    position: absolute;
+    top:20px;
+    z-index: 9;
+    font-size: 20px;
+    left:20px;
+    font-weight: 500;
+}
+
+.abc{
+    position: absolute;
+    top:-50px;
+}
+.huyen p{
+    font-size: 16px;
+    left: 40px;
+    position: absolute;
+}
+
+.btn__submit{
+    position: absolute;
+    top:100px;
+}
+.img__loveyou {
+    object-fit: cover;
+    width: 300px;
+}
+
+.header,.abc,.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header__content-messages {
+    color: white;
+    text-align: center;
+}
+
+.messages {
+    word-wrap: break-word;
+}

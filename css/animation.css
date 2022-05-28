@@ -1,0 +1,109 @@
+@keyframes changeColorYear {
+    from{
+        color:red;
+        opacity: 0.7;
+        
+    }
+    to {
+        opacity: 1;
+       
+    }
+}
+@keyframes changeColorContent {
+    from{
+        color:white;
+        opacity: 0.7;
+        
+    }
+    to {
+        opacity: 1;
+       
+    }
+}
+.animation1{
+    animation: changeColorYear 5s infinite ;
+}
+.animation2{
+    animation: changeColorContent 5s infinite ;
+}
+.icon{
+    color:red;
+    font-size: 2rem;
+}
+.canvas{
+    height: 100%;
+    width: 100%;
+}
+.volumn,.muted{
+    position:absolute;
+    z-index:9;
+    color: white;
+    bottom:0;
+}
+.muted{
+    right:20px;
+}
+.volumn{
+    right:70px
+}
+
+@import url("http://fonts.cdnfonts.com/css/poppins");
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow: hidden;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.banner{
+     text-align: center;
+     font-family: "Satisfy";
+     color: white;
+}
+
+.banner1 {
+    text-align: center;
+    font-family: "Satisfy";
+    background: linear-gradient(
+            to right,
+            red,
+            green,
+            blue,
+            lime,
+            cyan,
+            yellow,
+            orange,
+            aqua
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: gradient 2s linear infinite;
+}
+
+.bg__icon{
+    background: linear-gradient(
+            to right,
+            red,
+           pink,
+           deeppink
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: gradient 2s linear infinite;
+}
+
+
+@keyframes gradient {
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
