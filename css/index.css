@@ -126,7 +126,8 @@ canvas {
 
 .img__loveyou {
     object-fit: cover;
-    width: 300px;
+    width: 250px;
+    padding-top: 15px;
 }
 
 .header,

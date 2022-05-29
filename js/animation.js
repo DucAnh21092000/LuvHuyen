@@ -46,6 +46,8 @@ function display() {
 }
 
 function display2() {
+    let img = document.querySelector('.img__loveyou')
+    img.src = `https://res.cloudinary.com/ducanh21092000/image/upload/v1653786408/avatar/iloveyouu_pqiymo.gif`
     setTimeout(() => {
         const timeOut = setInterval(() => {
             arrYearResult2.push(arrContent2.shift())
@@ -65,14 +67,23 @@ display()
 
 const showabcd = () => {
     let abcd = document.querySelector('.abcd')
+    let huyen = document.querySelector('.huyen1')
+    huyen.classList.add('d-none')
     abcd.classList.remove('d-none')
+
 }
 
 const start = () => {
     let header = document.querySelector('.header')
     let start = document.querySelector('.show__start')
-    start.classList.add('d-none')
-    header.classList.remove('d-none')
+    start.classList.add('fade2')
+    header.classList.add('show2')
+    setTimeout( () => {
+        start.classList.add('d-none')
+        header.classList.remove('d-none')
+        header.classList.remove('show2')
+    },1000)
+    
 }
 
 const showbtn = () => {
@@ -87,7 +98,7 @@ const hidebtn = () => {
 
 const wait = () => {
     let header = document.querySelector('.header')
-    let huyen = document.querySelector('.huyen')
+    let huyen = document.querySelector('.huyen1')
     huyen.classList.remove('d-none')
     header.classList.add('d-none')
 }
