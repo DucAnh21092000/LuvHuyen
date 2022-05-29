@@ -58,6 +58,11 @@ body {
 body {
     background: url('../image/background.jpg');
     margin: 0;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position-x: -140px;
 }
 
 canvas {
@@ -69,7 +74,10 @@ canvas {
     font-size: 1.4rem;
 }
 
-.header__content,.start__content,.abc__content, .thanks {
+.header__content,
+.start__content,
+.abc__content,
+.thanks {
     width: 300px;
     overflow: hidden;
     background: linear-gradient(to bottom, rgb(17, 25, 53), rgb(44, 65, 96));
@@ -90,35 +98,40 @@ canvas {
     font-size: 50px;
     font-weight: 600;
 }
-.huyen{
+
+.huyen {
     position: absolute;
-    top:20px;
+    top: 20px;
     z-index: 9;
     font-size: 20px;
-    left:20px;
+    left: 20px;
     font-weight: 500;
 }
 
-.abc{
+.abc {
     position: absolute;
-    top:-50px;
+    top: -50px;
 }
-.huyen p{
+
+.huyen p {
     font-size: 16px;
     left: 40px;
     position: absolute;
 }
 
-.btn__submit{
+.btn__submit {
     position: absolute;
-    top:100px;
+    top: 100px;
 }
+
 .img__loveyou {
     object-fit: cover;
     width: 300px;
 }
 
-.header,.abc,.start {
+.header,
+.abc,
+.start {
     display: flex;
     justify-content: center;
     align-items: center;
